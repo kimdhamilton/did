@@ -5,7 +5,7 @@
       "capability": "IssueCredential",
       "permittedProofType": [
         {
-          "proofType": "???",
+          "proofType": "SatoshiBlockchainSignature2017?",
           "authenticationCredential": [
             {
               "type": [
