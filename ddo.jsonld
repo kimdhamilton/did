@@ -12,7 +12,7 @@
                 "EdDsaSAPublicKey",
                 "CryptographicKey"
               ],
-              "publicKeyHex": "02453a3718a6474db47e5fc56a061b73114ff5e6c6ca7741fcda946001f40d5a4a"
+              "publicKeyHex": "0280e0b456b9e97eecb8028215664c5b99ffa79628b60798edd9d562c6db1e4f85"
             }
           ]
         }
@@ -43,7 +43,7 @@
         "CryptographicKey"
       ],
       "curve": "secp256k1",
-      "publicKeyHex": "02453a3718a6474db47e5fc56a061b73114ff5e6c6ca7741fcda946001f40d5a4a"
+      "publicKeyHex": "0280e0b456b9e97eecb8028215664c5b99ffa79628b60798edd9d562c6db1e4f85"
     },
     {
       "id": "did:example:12345678/keys/1",
