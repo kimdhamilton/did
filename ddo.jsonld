@@ -19,7 +19,7 @@
         }
     ],
     "proof": {
-        "@type": "EcdsaKoblitzSignature2016",
+        "type": "EcdsaKoblitzSignature2016",
         "created": "2017-10-04T16:29:05Z",
         "creator": "ecdsa-koblitz-pubkey:034c3deaee7b81469d6ac7ab25f8bbf394b166dc85a8dda30f32b24e83ef5a062f",
         "signatureValue": "IEMc0Ypu5Q1kaCAA4MVZCpXvPzmi3AjTnNvXtogHo6R6LtkeyKTWmK+Yb9sViEkhvZSQjfiAoVghzD48w9CSv44="
