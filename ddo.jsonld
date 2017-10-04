@@ -1,55 +1,32 @@
 {
-  "@context": "https://w3id.org/btcr/v1",
-  "authorization": [
-    {
-      "capability": "IssueCredential",
-      "permittedProofType": [
+    "@context": {
+        "@vocab": "https://w3id.org/btcr/v1"
+    },
+    "authenticationCredential": [
         {
-          "proofType": "SatoshiBlockchainSignature2017?",
-          "authenticationCredential": [
-            {
-              "type": [
+            "type": [
                 "EdDsaSAPublicKey",
                 "CryptographicKey"
-              ],
-              "publicKeyHex": "0280e0b456b9e97eecb8028215664c5b99ffa79628b60798edd9d562c6db1e4f85"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "capability": "IssueCredential",
-      "entity": "did:example:12345678",
-      "permittedProofType": [
+            ],
+            "curve": "secp256k1",
+            "publicKeyHex": "0280e0b456b9e97eecb8028215664c5b99ffa79628b60798edd9d562c6db1e4f85"
+        },
         {
-          "proofType": "RsaSignature2017",
-          "authenticationCredential": [
-            {
-              "id": "did:example:12345678/keys/1",
-              "type": "RsaCryptographicKey",
-              "owner": "did:example:12345678",
-              "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
-            }
-          ]
+            "id": "did:example:12345678/keys/1",
+            "type": "RsaCryptographicKey",
+            "owner": "did:example:12345678",
+            "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
         }
-      ]
+    ],
+    "signature": {
+        "@type": "EcdsaKoblitzSignature2016",
+        "created": {
+            "@type": "dateTime",
+            "@value": "2017-10-04T16:29:05Z"
+        },
+        "creator": {
+            "@id": "ecdsa-koblitz-pubkey:034c3deaee7b81469d6ac7ab25f8bbf394b166dc85a8dda30f32b24e83ef5a062f"
+        },
+        "signatureValue": "IEMc0Ypu5Q1kaCAA4MVZCpXvPzmi3AjTnNvXtogHo6R6LtkeyKTWmK+Yb9sViEkhvZSQjfiAoVghzD48w9CSv44="
     }
-  ],
-  "authenticationCredential": [
-    {
-      "type": [
-        "EdDsaSAPublicKey",
-        "CryptographicKey"
-      ],
-      "curve": "secp256k1",
-      "publicKeyHex": "0280e0b456b9e97eecb8028215664c5b99ffa79628b60798edd9d562c6db1e4f85"
-    },
-    {
-      "id": "did:example:12345678/keys/1",
-      "type": "RsaCryptographicKey",
-      "owner": "did:example:12345678",
-      "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
-    }
-  ]
 }
