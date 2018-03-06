@@ -1,27 +1,37 @@
 {
-    "@context": {
-        "@vocab": "https://w3id.org/btcr/v1"
-    },
-    "authenticationCredential": [
-        {
-            "type": [
-                "EdDsaSAPublicKey",
-                "CryptographicKey"
-            ],
-            "curve": "secp256k1",
-            "publicKeyHex": "0280e0b456b9e97eecb8028215664c5b99ffa79628b60798edd9d562c6db1e4f85"
-        },
-        {
-            "id": "did:example:12345678/keys/1",
-            "type": "RsaCryptographicKey",
-            "owner": "did:example:12345678",
-            "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
-        }
+  "didDocument": {
+    "@context": "https://w3id.org/did/v1",
+    "publicKey": [
+      {
+        "id": "#keys-2",
+        "type": "RsaVerificationKey2018",
+        "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+      }
     ],
-    "proof": {
-        "type": "EcdsaKoblitzSignature2016",
-        "created": "2017-10-04T16:29:05Z",
-        "creator": "ecdsa-koblitz-pubkey:034c3deaee7b81469d6ac7ab25f8bbf394b166dc85a8dda30f32b24e83ef5a062f",
-        "signatureValue": "IEMc0Ypu5Q1kaCAA4MVZCpXvPzmi3AjTnNvXtogHo6R6LtkeyKTWmK+Yb9sViEkhvZSQjfiAoVghzD48w9CSv44="
-    }
+    "authentication": [
+      {
+        "type": "RsaSignatureAuthentication2018",
+        "publicKey": "#keys-2"
+      }
+    ],
+    "authenticationCredential": [
+      {
+        "type": [
+          "EdDsaSAPublicKey",
+          "CryptographicKey"
+        ],
+        "curve": "secp256k1",
+        "publicKeyHex": "0280e0b456b9e97eecb8028215664c5b99ffa79628b60798edd9d562c6db1e4f85"
+      },
+      {
+        "id": "did:example:12345678/keys/1",
+        "type": "RsaCryptographicKey",
+        "owner": "did:example:12345678",
+        "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
+      }
+    ]
+  },
+  "claims": [
+  
+  ]
 }
