@@ -13,22 +13,6 @@
         "type": "RsaSignatureAuthentication2018",
         "publicKey": "#keys-2"
       }
-    ],
-    "authenticationCredential": [
-      {
-        "type": [
-          "EdDsaSAPublicKey",
-          "CryptographicKey"
-        ],
-        "curve": "secp256k1",
-        "publicKeyHex": "0280e0b456b9e97eecb8028215664c5b99ffa79628b60798edd9d562c6db1e4f85"
-      },
-      {
-        "id": "did:example:12345678/keys/1",
-        "type": "RsaCryptographicKey",
-        "owner": "did:example:12345678",
-        "publicKeyPem": "-----BEGIN PUBLIC KEY...END PUBLIC KEY-----\r\n"
-      }
     ]
   },
   "claims": [
